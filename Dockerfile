@@ -1,5 +1,7 @@
-FROM composer
+ARG COMPOSER_VERSION=latest
 
-ARG PRESTISSIMO_VERSION=0.3.9
+FROM composer:${COMPOSER_VERSION}
+
+ARG PRESTISSIMO_VERSION=0.3.10
 
 RUN composer global require "hirak/prestissimo:$PRESTISSIMO_VERSION"
