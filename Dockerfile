@@ -1,7 +1,3 @@
 ARG COMPOSER_VERSION=2.0.0-RC1
 
 FROM composer:${COMPOSER_VERSION}
-
-ARG PRESTISSIMO_VERSION=0.3.10
-
-RUN composer global require "hirak/prestissimo:$PRESTISSIMO_VERSION"
